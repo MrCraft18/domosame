@@ -15,8 +15,9 @@
                     default = pkgs.mkShell {
                         packages = with pkgs; [
                             nodejs
+                            mecab
                         ] ++ [
-                            inputs.kwja.packages.${system}.default 
+                            # inputs.kwja.packages.${system}.default 
                         ];
 
                         shellHook = ''
